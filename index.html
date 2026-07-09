@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SLAT | Transporte terrestre de carga para exportación en contenedores dry y reefer</title>
+  <meta name="description" content="SLAT (Star Logistic and Transport): transporte terrestre de carga para exportación en contenedores dry y reefer. Experiencia en cacao, banano y camarón. Flota de más de 25 cabezales, talleres propios y monitoreo 24/7. Base en Guayaquil, cobertura nacional." />
+  <meta name="theme-color" content="#0d2149" />
+  <link rel="icon" type="image/png" href="assets/logo-slat.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SLAT | Transporte terrestre de carga para exportación" />
+  <meta property="og:description" content="Contenedores dry y reefer para cacao, banano y camarón. Flota de más de 25 cabezales, talleres propios y monitoreo 24/7." />
+  <meta property="og:image" content="assets/logo-slat.png" />
+  <meta property="og:locale" content="es_EC" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sprite de iconos (linea 1.5, currentColor) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 8.5 12 13 3 8.5 12 4l9 4.5Z"/><path d="M21 8.5v7L12 20l-9-4.5v-7"/><path d="M12 13v7"/>
+      </symbol>
+      <symbol id="i-snow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5 4.2 16.5"/><path d="M12 6.5 9.8 4.8 12 3l2.2 1.8L12 6.5Zm0 11 2.2 1.7L12 21l-2.2-1.8 2.2-1.7ZM4.2 7.5l2.7.2-1 2.5-2.2-1.3 .5-1.4Zm15.6 9-2.7-.2 1-2.5 2.2 1.3-.5 1.4Zm0-9-.5 1.4-2.2-1.3 1-2.5 2.7.2-1 2.2Zm-15.6 9 1-2.2 2.7-.2-1 2.5-2.2 1.3-.5-1.4Z"/>
+      </symbol>
+      <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="5" r="2.2"/><path d="M8.2 19H14a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h5.8"/>
+      </symbol>
+      <symbol id="i-gps" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><path d="M12 1v3M12 20v3M23 12h-3M4 12H1"/>
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>
+      </symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.7 6.3a4 4 0 0 0 5 5l-8.9 8.9a2.1 2.1 0 0 1-3-3l8.9-8.9a4 4 0 0 0-2-2Z"/><path d="M14.7 6.3 12.5 4a4 4 0 0 0-5 5"/>
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3 5 6v5c0 4.5 3 7.6 7 9 4-1.4 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/>
+      </symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 6h11v9H3zM14 9h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/>
+      </symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 1.8c2.17 0 4.2.85 5.74 2.38a8.06 8.06 0 0 1 2.38 5.73c0 4.47-3.64 8.11-8.12 8.11a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.12.82.83-3.04-.19-.31a8.05 8.05 0 0 1-1.24-4.29c0-4.47 3.64-8.11 8.12-8.11Zm-4.6 4.34c-.14 0-.36.05-.55.26-.19.21-.72.71-.72 1.72s.74 1.99.84 2.13c.1.14 1.44 2.28 3.54 3.11 1.75.69 2.11.55 2.49.52.38-.03 1.24-.51 1.42-1 .18-.49.18-.9.13-1-.05-.09-.19-.14-.4-.24-.21-.11-1.24-.61-1.44-.68-.19-.07-.33-.11-.47.11-.14.21-.54.68-.66.82-.12.14-.24.16-.45.05-.21-.11-.88-.32-1.68-1.04-.62-.55-1.04-1.24-1.16-1.45-.12-.21-.01-.32.09-.43.09-.09.21-.24.31-.36.11-.12.14-.21.21-.35.07-.14.03-.26-.02-.37-.05-.11-.46-1.12-.64-1.53-.17-.4-.34-.35-.47-.36l-.4-.01Z"/>
+      </symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 8.5V7c0-1 .5-1.5 1.6-1.5H17V2.5h-2.4C11.9 2.5 11 4.2 11 6.4v2.1H8.5V12H11v9.5h3V12h2.3l.5-3.5H14Z"/>
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/>
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21s-6.5-5.4-6.5-10.3A6.5 6.5 0 0 1 12 4a6.5 6.5 0 0 1 6.5 6.7C18.5 15.6 12 21 12 21Z"/><circle cx="12" cy="10.5" r="2.3"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 4C10 4 4 9 4 17c0 1 .2 2 .5 3 3-7 8-9 13-9.5-4 1.5-7 4.5-8.5 9C16 19 20 13 20 4Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ====================== HEADER ====================== -->
+  <header class="site-header" id="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="SLAT - Star Logistic and Transport - inicio">
+        <img src="assets/logo-slat.png" alt="SLAT - Star Logistic and Transport" class="brand-logo" width="140" height="46" />
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#flota">Flota</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-wa btn-sm" href="https://wa.me/593986411498?text=Hola%20SLAT%2C%20quiero%20cotizar%20un%20servicio%20de%20transporte." target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- ====================== HERO ====================== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid-dots"></div>
+        <span class="hero-glow hero-glow-a"></span>
+        <span class="hero-glow hero-glow-b"></span>
+        <svg class="hero-route" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <path id="routePath" class="route-line" d="M -100 600 C 200 560, 320 340, 590 360 C 860 380, 900 190, 1180 160 C 1340 145, 1420 210, 1600 170" />
+          <circle class="route-waypoint" cx="200" cy="560" r="5"></circle>
+          <circle class="route-waypoint" cx="900" cy="190" r="5"></circle>
+          <circle class="route-waypoint route-waypoint-end" cx="1180" cy="160" r="6"></circle>
+          <circle class="route-ping" cx="-100" cy="600" r="8">
+            <animateMotion class="route-motion" dur="16s" begin="0.2s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#routePath"></mpath>
+            </animateMotion>
+          </circle>
+          <circle class="route-dot" cx="-100" cy="600" r="7">
+            <animateMotion class="route-motion" dur="16s" begin="0.2s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#routePath"></mpath>
+            </animateMotion>
+          </circle>
+        </svg>
+      </div>
+
+      <div class="hero-media reveal" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+          class="hero-img"
+          loading="eager"
+          data-fallback="truck" />
+        <div class="hero-media-tint"></div>
+      </div>
+
+      <div class="hero-badge reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-gps"/></svg>
+        <div>
+          <strong>Monitoreo 24/7</strong>
+          <span>Seguimiento de ruta en tiempo real</span>
+        </div>
+      </div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Star Logistic and Transport</p>
+          <h1>Transporte terrestre de carga para <span class="hl">exportación</span></h1>
+          <p class="lead">Contenedores dry y reefer con cadena de frío controlada. Movemos cacao, banano y camarón con puntualidad para tu ventana de embarque.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contacto">
+              Solicitar servicio
+              <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://wa.me/593986411498?text=Hola%20SLAT%2C%20quiero%20cotizar%20un%20servicio%20de%20transporte." target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Escríbenos por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== STATS ====================== -->
+    <section class="stats" aria-label="Cifras de SLAT">
+      <div class="wrap stats-grid">
+        <div class="stat reveal">
+          <span class="stat-num" data-count="25" data-prefix="+">+25</span>
+          <span class="stat-label">Cabezales en flota</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="24" data-suffix="/7">24/7</span>
+          <span class="stat-label">Monitoreo de rutas</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num">Dry + Reefer</span>
+          <span class="stat-label">Contenedores secos y refrigerados</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num">Nacional</span>
+          <span class="stat-label">Cobertura en todo el país</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== SERVICIOS ====================== -->
+    <section class="section" id="servicios">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Servicios</p>
+          <h2>Todo lo que tu carga de exportación necesita en tierra</h2>
+          <p class="section-sub">Del origen al puerto, con el equipo y el control que exige la carga perecible y la carga seca.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <span class="feature-ico"><svg class="ico" aria-hidden="true"><use href="#i-box"/></svg></span>
+            <h3>Contenedor Dry</h3>
+            <p>Transporte de contenedores secos para carga general y de exportación, con equipos en óptimas condiciones.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-ico accent"><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg></span>
+            <h3>Contenedor Reefer</h3>
+            <p>Cadena de frío controlada para camarón, banano y perecibles. Cuidamos la temperatura durante toda la ruta.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-ico"><svg class="ico" aria-hidden="true"><use href="#i-route"/></svg></span>
+            <h3>Rutas puerto y origen</h3>
+            <p>Recolección en finca, planta o bodega y entrega en puerto, coordinada con tu ventana de embarque.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-ico"><svg class="ico" aria-hidden="true"><use href="#i-gps"/></svg></span>
+            <h3>Monitoreo GPS 24/7</h3>
+            <p>Seguimiento en tiempo real y reportes de ruta. Sabes dónde está tu carga en cada momento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== EXPERIENCIA (PRODUCTOS) ====================== -->
+    <section class="section section-alt" id="experiencia">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2>Experiencia moviendo lo que el país exporta</h2>
+          <p class="section-sub">Conocemos el manejo, los tiempos y las exigencias de la carga de exportación ecuatoriana.</p>
+        </header>
+
+        <div class="bento">
+          <article class="bento-card bento-lg reveal">
+            <img src="assets/camaron.jpg" alt="Camarón fresco para exportación" loading="lazy" />
+            <div class="bento-body">
+              <span class="tag"><svg class="ico" aria-hidden="true"><use href="#i-snow"/></svg> Reefer</span>
+              <h3>Camarón</h3>
+              <p>Carga refrigerada con temperatura controlada de punta a punta, para llegar al puerto en perfecto estado.</p>
+            </div>
+          </article>
+
+          <article class="bento-card reveal">
+            <img src="assets/banano.jpg" alt="Banano para exportación" loading="lazy" />
+            <div class="bento-body">
+              <span class="tag"><svg class="ico" aria-hidden="true"><use href="#i-leaf"/></svg> Perecible</span>
+              <h3>Banano</h3>
+              <p>Coordinación fina de tiempos entre finca y muelle para cumplir la ventana de embarque.</p>
+            </div>
+          </article>
+
+          <article class="bento-card reveal">
+            <img src="assets/cacao.jpg" alt="Cacao para exportación" loading="lazy" />
+            <div class="bento-body">
+              <span class="tag"><svg class="ico" aria-hidden="true"><use href="#i-box"/></svg> Dry</span>
+              <h3>Cacao</h3>
+              <p>Transporte cuidadoso en contenedor seco, protegiendo la calidad del grano hasta el puerto.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FLOTA / POR QUE SLAT ====================== -->
+    <section class="section" id="flota">
+      <div class="wrap why-grid">
+        <div class="why-media reveal">
+          <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1100&q=80" alt="Flota de cabezales SLAT" data-fallback="fleet" />
+          <div class="why-media-stat">
+            <span>+25</span>
+            <small>cabezales operativos</small>
+          </div>
+        </div>
+
+        <div class="why-copy reveal">
+          <p class="eyebrow">Por qué SLAT</p>
+          <h2>Flota propia, talleres propios, cero improvisación</h2>
+          <p class="section-sub">La confiabilidad no se promete, se sostiene con equipo y mantenimiento. Por eso controlamos toda la operación.</p>
+          <ul class="why-list">
+            <li>
+              <span class="why-ico"><svg class="ico" aria-hidden="true"><use href="#i-truck"/></svg></span>
+              <div><strong>Más de 25 cabezales</strong><p>Capacidad para responder a volúmenes y picos de exportación.</p></div>
+            </li>
+            <li>
+              <span class="why-ico"><svg class="ico" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+              <div><strong>Talleres de mantenimiento propios</strong><p>Ejecutamos el mantenimiento en casa, reduciendo fallas y demoras en ruta.</p></div>
+            </li>
+            <li>
+              <span class="why-ico"><svg class="ico" aria-hidden="true"><use href="#i-gps"/></svg></span>
+              <div><strong>Monitoreo 24/7</strong><p>Cada ruta bajo seguimiento constante, con reportes cuando los necesitas.</p></div>
+            </li>
+            <li>
+              <span class="why-ico"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span>
+              <div><strong>Puntualidad en el embarque</strong><p>Planificamos alrededor de tu cut-off para que la carga llegue a tiempo.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PROCESO ====================== -->
+    <section class="section section-alt" id="proceso">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>Un proceso claro, de la solicitud al puerto</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-n">01</span>
+            <h3>Solicitas</h3>
+            <p>Nos cuentas el tipo de carga, contenedor y ruta. Te respondemos con una cotización.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-n">02</span>
+            <h3>Coordinamos</h3>
+            <p>Programamos recolección y equipo según tu ventana de embarque.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-n">03</span>
+            <h3>Transportamos</h3>
+            <p>Movemos la carga con monitoreo 24/7 y control de temperatura si es reefer.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-n">04</span>
+            <h3>Entregamos</h3>
+            <p>Tu carga llega al puerto a tiempo, con seguimiento hasta el final.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================== CTA + FORMULARIO ====================== -->
+    <section class="cta" id="contacto">
+      <div class="wrap cta-grid">
+        <div class="cta-copy reveal">
+          <h2>Solicita tu servicio de transporte</h2>
+          <p>Completa el formulario y lo enviamos directo a nuestro WhatsApp para responderte rápido. También puedes escribirnos ahora mismo.</p>
+
+          <a class="btn btn-wa btn-lg" href="https://wa.me/593986411498?text=Hola%20SLAT%2C%20quiero%20cotizar%20un%20servicio%20de%20transporte." target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Escribir al 098 641 1498
+          </a>
+
+          <ul class="cta-contacts">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg> <a href="mailto:starlogistic9@gmail.com">starlogistic9@gmail.com</a></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg> Base en Guayaquil, cobertura nacional</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg> Monitoreo y atención 24/7</li>
+          </ul>
+        </div>
+
+        <form class="cta-form reveal" id="serviceForm" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required />
+            <small class="err" data-for="nombre"></small>
+          </div>
+          <div class="field">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" autocomplete="organization" />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="carga">Tipo de carga</label>
+              <select id="carga" name="carga">
+                <option value="Cacao">Cacao</option>
+                <option value="Banano">Banano</option>
+                <option value="Camarón">Camarón</option>
+                <option value="Otra">Otra</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="contenedor">Contenedor</label>
+              <select id="contenedor" name="contenedor">
+                <option value="Dry">Dry (seco)</option>
+                <option value="Reefer">Reefer (refrigerado)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="origen">Origen</label>
+              <input type="text" id="origen" name="origen" placeholder="Ciudad o finca" />
+            </div>
+            <div class="field">
+              <label for="destino">Destino / puerto</label>
+              <input type="text" id="destino" name="destino" placeholder="Puerto de embarque" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Detalle (opcional)</label>
+            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Volumen, fechas, ventana de embarque..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            <span class="btn-label">Enviar por WhatsApp</span>
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo-plaque">
+          <img src="assets/logo-slat.png" alt="SLAT - Star Logistic and Transport" width="150" height="49" />
+        </span>
+        <p>Transporte terrestre de carga para exportación en contenedores dry y reefer.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <a href="#servicios">Contenedor Dry</a>
+        <a href="#servicios">Contenedor Reefer</a>
+        <a href="#servicios">Rutas puerto y origen</a>
+        <a href="#servicios">Monitoreo GPS 24/7</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/593986411498" target="_blank" rel="noopener">WhatsApp: 098 641 1498</a>
+        <a href="mailto:starlogistic9@gmail.com">starlogistic9@gmail.com</a>
+        <span>Guayaquil, Ecuador</span>
+        <span>Cobertura nacional</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <div class="socials">
+          <!-- TODO: reemplazar con los enlaces reales de redes -->
+          <a href="#" aria-label="Instagram de SLAT"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="#" aria-label="Facebook de SLAT"><svg class="ico" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <span>&copy; <span id="year"></span> SLAT - Star Logistic and Transport. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-float" href="https://wa.me/593986411498?text=Hola%20SLAT%2C%20quiero%20cotizar%20un%20servicio%20de%20transporte." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
