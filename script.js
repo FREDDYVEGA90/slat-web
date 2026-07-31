@@ -149,7 +149,7 @@
       e.preventDefault();
 
       if (!nombre.value.trim()) {
-        setInvalid(nombre, "Escribe tu nombre para poder responderte.");
+        setInvalid(nombre, "Ingrese su nombre para poder responderle.");
         nombre.focus();
         return;
       }
@@ -169,7 +169,7 @@
 
       var url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
 
-      if (note) note.textContent = "Abriendo WhatsApp con tu solicitud...";
+      if (note) note.textContent = "Abriendo WhatsApp con su solicitud...";
       window.open(url, "_blank", "noopener");
     });
   }

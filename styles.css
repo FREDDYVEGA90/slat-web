@@ -126,7 +126,7 @@ h1, h2, h3, h4 {
 .site-header.scrolled { border-bottom-color: var(--line); box-shadow: var(--sh-sm); background: rgba(255, 255, 255, .92); }
 
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 72px; }
-.brand-logo { height: 42px; width: auto; }
+.brand-logo { height: 53px; width: auto; }
 
 .nav { display: flex; align-items: center; gap: 30px; }
 .nav a {
@@ -323,29 +323,21 @@ h1, h2, h3, h4 {
 .feature p { color: var(--muted); font-size: .96rem; margin: 0; }
 
 /* -------- Experiencia (bento) -------- */
-.bento { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; }
+.bento { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .bento-card {
   position: relative; border-radius: var(--r-card); overflow: hidden; min-height: 340px;
   background: var(--navy-800); box-shadow: var(--sh-md); display: flex;
   transition: transform .25s var(--ease), box-shadow .25s var(--ease);
 }
 .bento-card:hover { transform: translateY(-4px); box-shadow: var(--sh-lg); }
-.bento-lg { grid-row: span 1; }
 .bento-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .bento-card::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(8, 22, 51, .05) 0%, rgba(8, 22, 51, .35) 45%, rgba(8, 22, 51, .88) 100%);
 }
 .bento-body { position: relative; z-index: 1; margin-top: auto; padding: 26px; color: #fff; }
-.bento-body h3 { color: #fff; font-size: 1.5rem; margin: 10px 0 8px; }
+.bento-body h3 { color: #fff; font-size: 1.5rem; margin: 0 0 8px; }
 .bento-body p { color: rgba(255, 255, 255, .82); font-size: .95rem; margin: 0; max-width: 42ch; }
-.tag {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: .74rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
-  background: rgba(255, 255, 255, .16); backdrop-filter: blur(4px);
-  padding: 6px 11px; border-radius: var(--r-pill); color: #fff;
-}
-.tag .ico { width: 14px; height: 14px; }
 
 /* -------- Flota / Por qué (split) -------- */
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 5vw, 72px); align-items: center; }
@@ -368,16 +360,22 @@ h1, h2, h3, h4 {
 .why-list strong { font-family: "Sora", sans-serif; color: var(--navy-800); font-size: 1.05rem; }
 .why-list p { margin: 3px 0 0; color: var(--muted); font-size: .95rem; }
 
-/* -------- Proceso (steps) -------- */
-.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; counter-reset: s; }
-.step { position: relative; padding: 30px 24px; background: #fff; border-radius: var(--r-card); border: 1px solid var(--line-2); box-shadow: var(--sh-sm); }
-.step-n { font-family: "Sora", sans-serif; font-weight: 800; font-size: 2.2rem; color: var(--paper-2); -webkit-text-stroke: 1px var(--line); line-height: 1; }
-.step h3 { font-size: 1.2rem; margin: 14px 0 8px; }
-.step p { color: var(--muted); font-size: .95rem; margin: 0; }
-.step::before {
-  content: ""; position: absolute; top: 30px; right: 24px; width: 8px; height: 8px; border-radius: 50%; background: var(--red);
-  opacity: .0;
+/* -------- Nosotros (misión / visión) -------- */
+.mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.mv-card {
+  background: #fff; border: 1px solid var(--line-2); border-radius: var(--r-card);
+  padding: clamp(28px, 3.2vw, 40px); box-shadow: var(--sh-sm);
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), border-color .22s var(--ease);
 }
+.mv-card:hover { transform: translateY(-4px); box-shadow: var(--sh-md); border-color: var(--line); }
+.mv-ico {
+  width: 52px; height: 52px; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(13, 33, 73, .06); color: var(--navy-700); margin-bottom: 18px;
+}
+.mv-ico .ico { width: 26px; height: 26px; }
+.mv-ico.accent { background: rgba(226, 31, 38, .1); color: var(--red); }
+.mv-card h3 { font-size: 1.35rem; margin-bottom: 10px; }
+.mv-card p { color: var(--muted); font-size: 1rem; margin: 0; }
 
 /* =========================================================
    CTA + FORMULARIO
@@ -427,7 +425,7 @@ h1, h2, h3, h4 {
 .footer-logo-plaque {
   display: inline-flex; background: #fff; padding: 12px 16px; border-radius: 12px; margin-bottom: 16px;
 }
-.footer-logo-plaque img { height: 40px; width: auto; }
+.footer-logo-plaque img { height: 51px; width: auto; }
 .footer-brand p { margin: 0; max-width: 34ch; font-size: .95rem; }
 .footer-col h4 { color: #fff; font-size: .95rem; margin-bottom: 16px; letter-spacing: .01em; }
 .footer-col a, .footer-col span { display: block; font-size: .93rem; color: rgba(255, 255, 255, .72); margin-bottom: 10px; }
@@ -492,9 +490,6 @@ h1, h2, h3, h4 {
 
 @media (max-width: 1024px) {
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
-  .steps { grid-template-columns: repeat(2, 1fr); }
-  .bento { grid-template-columns: 1fr 1fr; }
-  .bento-lg { grid-column: span 2; }
 }
 
 @media (max-width: 860px) {
@@ -515,6 +510,9 @@ h1, h2, h3, h4 {
   .stat + .stat:nth-child(odd)::before { display: none; }
   .stat:nth-child(3), .stat:nth-child(4) { padding-top: 20px; border-top: 1px solid rgba(255,255,255,.14); }
 
+  /* Las 3 tarjetas de carga se mantienen simétricas: 3 columnas o 1, nunca 2+1 */
+  .bento { grid-template-columns: 1fr; }
+  .mv-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .why-media { order: -1; }
   .cta-grid { grid-template-columns: 1fr; }
@@ -523,9 +521,6 @@ h1, h2, h3, h4 {
 
 @media (max-width: 560px) {
   .feature-grid { grid-template-columns: 1fr; }
-  .steps { grid-template-columns: 1fr; }
-  .bento { grid-template-columns: 1fr; }
-  .bento-lg { grid-column: auto; }
   .field-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .hero-cta .btn { width: 100%; }

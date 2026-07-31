@@ -1,0 +1,8 @@
+# Configuración local de herramientas (contiene claves de API, no debe publicarse)
+.mcp.json
+.claude/
+
+# Temporales del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
